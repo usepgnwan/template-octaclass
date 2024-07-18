@@ -1306,6 +1306,10 @@ input:checked + .toggle-bg {
   margin-top: 3px;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1365,6 +1369,18 @@ input:checked + .toggle-bg {
   height: 2.25rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
 .min-h-\[70px\] {
   min-height: 70px;
 }
@@ -1403,6 +1419,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-\[300px\] {
@@ -1711,6 +1731,14 @@ input:checked + .toggle-bg {
   background-image: url('asset/img/test.jpg');
 }
 
+.bg-\[url\(\'\.\/asset\/img\/test\.jpg\'\)\] {
+  background-image: url('./asset/img/test.jpg');
+}
+
+.bg-\[url\(\'\.\.\/asset\/img\/test\.jpg\'\)\] {
+  background-image: url('../asset/img/test.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1945,6 +1973,31 @@ input:checked + .toggle-bg {
 
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
+}
+
+.text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2380,6 +2433,14 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-64 {
     height: 16rem;
   }
@@ -2415,6 +2476,11 @@ input:checked + .toggle-bg {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2517,6 +2583,10 @@ input:checked + .toggle-bg {
 
   .lg\:p-6 {
     padding: 1.5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:hover\:bg-sky-700:hover {
