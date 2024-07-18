@@ -2268,6 +2268,10 @@ input:checked + .toggle-bg {
     margin-top: 0.25rem;
   }
 
+  .max-lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .max-lg\:block {
     display: block;
   }
@@ -2280,6 +2284,10 @@ input:checked + .toggle-bg {
     min-height: 65vh;
   }
 
+  .max-lg\:min-h-\[85vh\] {
+    min-height: 85vh;
+  }
+
   .max-lg\:w-1\/2 {
     width: 50%;
   }
@@ -2290,6 +2298,10 @@ input:checked + .toggle-bg {
 
   .max-lg\:min-w-\[300px\] {
     min-width: 300px;
+  }
+
+  .max-lg\:items-center {
+    align-items: center;
   }
 
   .max-lg\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
