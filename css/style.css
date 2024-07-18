@@ -1326,6 +1326,10 @@ input:checked + .toggle-bg {
   margin-left: 0.75rem;
 }
 
+.mt-\[-150px\] {
+  margin-top: -150px;
+}
+
 .block {
   display: block;
 }
@@ -2585,6 +2589,10 @@ input:checked + .toggle-bg {
   .sm\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .sm\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .sm\:text-left {
