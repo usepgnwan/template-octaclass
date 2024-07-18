@@ -2563,8 +2563,16 @@ input:checked + .toggle-bg {
     height: 75%;
   }
 
+  .sm\:h-1\/2 {
+    height: 50%;
+  }
+
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
   }
 
   .sm\:object-cover {
