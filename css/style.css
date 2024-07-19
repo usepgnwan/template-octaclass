@@ -2010,6 +2010,11 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2621,6 +2626,16 @@ input:checked + .toggle-bg {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .group\/detail:hover .sm\:group-hover\/detail\:bottom-0 {
