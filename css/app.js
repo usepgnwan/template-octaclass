@@ -121,4 +121,5 @@ toggleClose.addEventListener('click', handleClick);
             Hlist.remove('p-6');
         }
     });
+    
 })();

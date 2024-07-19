@@ -18,8 +18,28 @@ module.exports = {
               "100%" : "100% !important"
           },
           animation: {
-              "ping-slow" :  "ping 2s cubic-bezier(0, 0, 0.8, 0.2) infinite"
-          }
+              "ping-slow" :  "ping 2s cubic-bezier(0, 0, 0.8, 0.2) infinite",
+               "typing": "typing 2s steps(20) infinite alternate, blink 5s infinite"
+          },
+          keyframes: {
+            typing: {
+              "0%": {
+                width: "0%",
+                visibility: "hidden"
+              },
+              "100%": {
+                width: "100%"
+              }  
+            },
+            blink: {
+              "50%": {
+                borderColor: "transparent"
+              },
+              "100%": {
+                borderColor: "white"
+              }  
+            }
+          },
         }
     },
     plugins: [
