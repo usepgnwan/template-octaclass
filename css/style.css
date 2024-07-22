@@ -3339,6 +3339,10 @@ input:checked + .toggle-bg {
     width: 66.666667%;
   }
 
+  .lg\:w-9\/12 {
+    width: 75%;
+  }
+
   .lg\:min-w-32 {
     min-width: 8rem;
   }
