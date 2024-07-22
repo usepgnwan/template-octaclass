@@ -115,10 +115,13 @@ toggleClose.addEventListener('click', handleClick);
             Hlist.add('transition-all')
             Hlist.add('ease-in-out')
             Hlist.add('p-6');
+            Hlist.add('shadow-sm'); 
+            
         } else {
             Hlist.remove('transition-all')
             Hlist.remove('ease-in-out')
             Hlist.remove('p-6');
+            Hlist.remove('shadow-sm'); 
         }
     });
     
