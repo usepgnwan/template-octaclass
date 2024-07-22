@@ -10,13 +10,13 @@ function handleClick() {
 
     if(toggleClose.classList.contains('h-opened')){
         toggleClose.classList.remove('h-opened')
-        toggleClose.classList.remove('bg-white')
+        toggleClose.classList.remove('bg-[#FABE0E]')
         toggleClose.classList.add('bg-slate-400')
         toggleClose.querySelector('.h-open').classList.add('hidden')
         toggleClose.querySelector('.h-close').classList.remove('hidden')
     }else{
         toggleClose.classList.add('h-opened')
-        toggleClose.classList.add('bg-white')
+        toggleClose.classList.add('bg-[#FABE0E]')
         toggleClose.classList.remove('bg-slate-400')
         toggleClose.querySelector('.h-open').classList.remove('hidden')
         toggleClose.querySelector('.h-close').classList.add('hidden')
