@@ -114,14 +114,16 @@ toggleClose.addEventListener('click', handleClick);
         if (window.scrollY > 50) { // Change this value based on when you want the effect to start
             Hlist.add('transition-all')
             Hlist.add('ease-in-out')
-            Hlist.add('p-6');
-            Hlist.add('shadow-sm'); 
+            Hlist.add('px-12');
+            Hlist.remove('sm:px-10');
+            Hlist.add('shadow-lg'); 
             
         } else {
             Hlist.remove('transition-all')
             Hlist.remove('ease-in-out')
-            Hlist.remove('p-6');
-            Hlist.remove('shadow-sm'); 
+            Hlist.remove('12x-9');
+            Hlist.add('sm:px-10');
+            Hlist.remove('shadow-lg'); 
         }
     });
     
