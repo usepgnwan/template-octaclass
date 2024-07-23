@@ -51,7 +51,6 @@ toggleClose.addEventListener('click', handleClick);
 
 (function() {
     "use strict";
-
     /**
      * Easy selector helper function
      */
@@ -64,6 +63,7 @@ toggleClose.addEventListener('click', handleClick);
       }
     }
 
+    const html = select('html') 
     /**
      * Easy event listener function
      */
@@ -97,6 +97,35 @@ toggleClose.addEventListener('click', handleClick);
             list.remove('text-gray-900')
         }
     },true);
+
+    on('click', '.dark-button', function(e){
+        const $this = this.classList;
+        if($this.contains('icon-[ph--sun-light]')){
+            $this.add('icon-[line-md--moon-loop]');
+            $this.remove('icon-[ph--sun-light]');
+            html.classList.add('dark')
+            localStorage.theme = 'dark'
+        }else{   
+            $this.remove('icon-[line-md--moon-loop]');
+            $this.add('icon-[ph--sun-light]');
+            html.classList.remove('dark')
+            localStorage.theme = 'light'
+        }
+    });
+    const darkbtn = select('.dark-button');
+    if(localStorage.theme !== undefined){
+        if ((localStorage.theme !== '' && localStorage.theme === 'dark' )|| (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            darkbtn.classList.add('icon-[line-md--moon-loop]'); 
+            html.classList.add('dark')
+        } else { 
+                darkbtn.classList.add('icon-[ph--sun-light]');
+                html.classList.remove('dark')
+        }
+    }else { 
+            darkbtn.classList.add('icon-[ph--sun-light]');
+            html.classList.remove('dark')
+    }
+        
     // on('click', '.more-mobile', function(e) {
 
     //     let more =  select('.more-mobile-sub').classList;
