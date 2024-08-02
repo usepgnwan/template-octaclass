@@ -39,7 +39,10 @@
     }
 
     .pill-octaclass{
-        @apply rounded-lg border dark:border-gray-800 text-[10px] px-4 py-1;
+        @apply rounded-lg border dark:border-gray-800 text-[10px] px-3 py-1  text-nowrap;
+    }
+    .pill-yellow-octaclass{
+        @apply  text-nowrap rounded-lg border border-[#FABE0E] cursor-pointer dark:border-gray-800 text-[10px] px-3 py-1 hover:bg-[#FABE0E] hover:text-white;
     }
 
     .btn-red-octaclass{
