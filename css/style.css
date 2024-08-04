@@ -4212,6 +4212,10 @@ input:checked + .toggle-bg {
     padding: 1.5rem;
   }
 
+  .max-lg\:p-5 {
+    padding: 1.25rem;
+  }
+
   .max-lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
