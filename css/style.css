@@ -3050,6 +3050,16 @@ input:checked + .toggle-bg {
   background-color: rgb(250 190 14 / var(--tw-bg-opacity));
 }
 
+.bg-sky-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.bg-sky-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/asset\/img\/home\/rani1\.jpg\'\)\] {
   background-image: url('../asset/img/home/rani1.jpg');
 }
@@ -3696,6 +3706,11 @@ input:checked + .toggle-bg {
 .hover\:bg-yellow-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#FABE0E\]:hover {
@@ -4505,6 +4520,11 @@ input:checked + .toggle-bg {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .group\/detail:hover .sm\:group-hover\/detail\:bottom-0 {
