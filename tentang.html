@@ -13,6 +13,7 @@
 />
 
 <body class=" dark:text-slate-400  dark:bg-gray-700">
+    <span class="icon-[ph--sun-light] size-4 cursor-pointer fill-gray-400 my-auto max-lg:ml-auto hidden"></span> 
     <header  class='flex dark:bg-gray-800 bg-[#FABE0E] border-b max-lg:py-4 max-lg:px-4 sm:px-10 sticky font-[sans-serif] min-h-[70px] tracking-wide  border-none  top-0 z-50  '
     id="header">
     <div class='flex flex-wrap items-center gap-5 w-full'>
@@ -138,224 +139,52 @@
 
         </div>
     </div>
-</header>
-    <section class="w-full h-[20vh] sm:h-[69vh] bg-gray-900 mb-12  bg-[url('https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjpExMTczNjB8&ixlib=rb-4.0.3&q=80&w=1080')] sm:bg-fixed bg-no-repeat bg-cover bg-center" id="banner">
-        <div class="w-full flex justify-center h-full"> 
-            <nav class="flex content-center  text-sm sm:text-2xl " aria-label="Breadcrumb">
-                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+</header> 
+    <section class="container w-full mt-5 mb-12  relative mx-auto">
+        <div class=" mb-3 mx-3 " id="breadcrumb"> 
+            <nav class="flex content-center  text-sm sm:text-sm " aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-1 rtl:space-x-reverse">
                 <li class="inline-flex items-center">
                     <a href="#" class="inline-flex items-center font-medium text-gray-700 hover:text-[#FABE0E] dark:text-gray-400 dark:hover:text-white">
-                        <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-3 h-3 me-2.5 dark:fill-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">
                             <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
                         </svg>
                         Home
                     </a>
-                </li>
-                <li>
-                    <div class="flex items-center">
-                        <span class="icon-[ep--arrow-right] text-slate-700 mt-2"></span> &nbsp;
-                        <a href="#" class="ms-1 font-medium text-gray-700 hover:text-[#FABE0E] md:ms-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
-                    </div>
-                </li>
+                </li> 
                 <li aria-current="page">
                     <div class="flex items-center">
-                        <span class="icon-[ep--arrow-right] text-slate-700 mt-2"></span> &nbsp;
-                        <span class="ms-1 font-medium text-gray-500 md:ms-2 dark:text-gray-400">Flowbite</span>
+                        <span class="icon-[ep--arrow-right] text-slate-800 mt-2"></span> &nbsp;
+                        <span class="ms-1 font-medium text-gray-500 md:ms-2 dark:text-gray-400">Tentang</span>
                     </div>
                 </li>
                 </ol>
             </nav>
-        </div>
-    </section>
-    <section class="container w-full mt-12 mb-12 px-6 relative mx-auto">
-        <div class="max-lg:w-full sm:mx-auto lg:w-[70%] mb-4 lg:ml-10 ">
-            <div class="text-center w-full mb-2">
-                <button class=" lg:hidden btn-yellow-octaclass" type="button" data-drawer-target="drawer-swipe" data-drawer-show="drawer-swipe" data-drawer-placement="bottom" data-drawer-edge="true" data-drawer-edge-offset="bottom-[-60px]" aria-controls="drawer-swipe"><span class="icon-[mdi--filter]"></span> 
-                Filter
-                </button>
-            </div> 
-            <div class="flex mb-1 flex-wrap  gap-1">
-                <div class="pill-octaclass">Himpunan</div>
-                <div class="pill-octaclass">Try Out</div> 
-                <div class="pill-octaclass">VII </div> 
-                <div class="pill-octaclass">VI</div> 
-                <div class="rounded-lg border border-red-500 cursor-pointer dark:border-gray-800 text-[10px] px-4 py-1 hover:bg-red-500 hover:text-white"><span class="icon-[mdi--filter-off]"></span> Clear Filter</div> 
-            </div>
-        </div>
-        <div class="w-full flex max-lg:flex-wrap gap-2">
-            <div class="w-full lg:w-3/4 ">
-                <div class=" mb-12 continer lg:px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly ">
-                    <div class=" dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
-                            <div  class="w-full rounded-xl p-2 relative">
-                                <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjExMTczNjB8&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="" class="rounded-xl">
-                                <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[carbon--time]"></span> 2024 Jun 08</div>
-                            </div>
-                            <div class="px-4 py-4 dark:text-slate-400">
-                                <div class="font-bold text-sm  mb-1 min-h-16">Download Soal OSN Matematika SMA Tahun 2023 Tingkat Kota Kabupaten </div>
-                                    <div class="flex mb-1 gap-1 overflow-auto ">
-                                        <div class="pill-yellow-octaclass text-nowrap">Bank Soal</div>
-                                        <div class="pill-octaclass">Himpunan</div>
-                                        <div class="pill-octaclass">Bilangan</div> 
-                                        <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
-                                    </div>
-                                    <div class="text-sm  px-1 text-justify">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, iusto vero! Modi, nihil eveniet enim voluptatum provident iusto reprehenderit ipsam iure.
-                                    </div>
-                            </div> 
-
-                        <hr class="dark:border-gray-700">
-                        <div class="px-4 text-sm  py-2 w-full"> 
-                            <a href="artikel-detail.html" class="block btn-start-card py-3"><span class="icon-[flowbite--list-outline]"></span> Lihat Bank Soal</a>
-                        </div>
-                    </div> 
-                    <div class=" dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
-                        <div  class="w-full rounded-xl p-2 relative">
-                            <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjExMTczNjB8&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="" class="rounded-xl">
-                            <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[carbon--time]"></span> 2024 Jun 08</div> 
-                            <div class="dark:bg-gray-800 absolute top-4 left-1 text-[10px] p-2   bg-sky-500 text-white rounded-md content-center text-sm"> 
-                                <div class="p-1 text-white dark:text-sky-600 italic"><small class="text-xs line-through  dark:text-sky-600 italic">Rp. 50000</small> <br> Rp 25000</div>
-                            </div>
-                        </div>
-                        <div class="px-4 py-4 dark:text-slate-400">
-                            <div class="font-bold text-sm  mb-1 min-h-16">Try Out Persiapan Assesment</div>
-                                <div class="flex mb-1  gap-1 overflow-auto">
-                                    <div class="pill-yellow-octaclass"> <span class="icon-[clarity--group-solid]"></span> 08</div>
-                                    <div class="pill-yellow-octaclass">Try Out</div>
-                                    <div class="pill-octaclass">Himpunan</div>
-                                    <div class="pill-octaclass">Bilangan</div> 
-                                    <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
-                                </div>
-                                <div class="text-sm  px-1 text-justify">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, iusto vero! Modi, nihil eveniet enim voluptatum provident iusto reprehenderit ipsam iure.
-                                </div>
-                        </div> 
-                        <hr class="dark:border-gray-700">
-                        <div class="px-4 text-sm  py-2 w-full"> 
-                            <a href="try-out.html" class="block btn-start-card py-3"><span class="icon-[solar--play-bold]"></span> Mulai</a>
-                        </div>
-                    </div> 
-                    <div class="  dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
-                            <div  class="w-full rounded-xl p-2 relative">
-                                <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjExMTczNjB8&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="" class="rounded-xl">
-                                <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[carbon--time]"></span> 2024 Jun 08</div>
-                            </div>
-                            <div class="px-4 py-4 dark:text-slate-400">
-                                <div class="font-bold text-sm mb-1 min-h-16"> <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html"> Lorem ipsum dolor sit, amet consectetur adipisicing elit </a></div>
-                                    <div class="flex mb-1  gap-1">
-                                        <div class="pill-yellow-octaclass">Artikel</div>
-                                        <div class="pill-octaclass">Himpunan</div>
-                                        <div class="pill-octaclass">Bilangan</div> 
-                                        <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
-                                    </div>
-                                    <div class="text-sm  px-1 text-justify">
-                                        <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, iusto vero! Modi, nihil eveniet enim voluptatum provident iusto reprehenderit ipsam iure.</a>
-                                    </div>
-                            </div> 
-                        <hr class="dark:border-gray-700">
-                        <div class="px-4 text-sm  py-2 flex"> 
-                            <img id="avatarButton" class="w-7 h-w-7 rounded-full cursor-pointer " src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="User"> 
-                            <div class="px-4 pt-1">Rani Oktaviani</div>
-                        </div>
-                    </div>  
-                </div> 
-                <div class="flex w-full justify-center">
-                    <a href="" class="btn-next-yellow">  Selanjutnya <span class="icon-[ion--reload-sharp]"></span></a>
-                </div>
-            </div>
-            <div class="w-full lg:w-1/4 sticky right-0 "> 
-                <div class="text-center w-full mb-2">
-                    <button class="btn-yellow-octaclass hidden lg:block" type="button" data-drawer-target="drawer-swipe" data-drawer-show="drawer-swipe" data-drawer-placement="bottom" data-drawer-edge="true" data-drawer-edge-offset="bottom-[-60px]" aria-controls="drawer-swipe"><span class="icon-[mdi--filter]"></span> 
-                    Filter
-                    </button>
-                    
-                </div> 
-                <div class="card-bordered-yellow-octaclass">
-                    <h3 class="font-bold text-xl">Siswa Terdaftar</h3>
-                    <div class="flex flex-wrap  dark:text-slate-400 px-2 text-justify"> 
-                        <div class="w-full flex justify-center  mt-5 mb-4 max-lg:text-sm"> 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, dolorum inventore ullam.
-                        </div>
-                        <div class="w-full flex justify-center flex-wrap">
-                            <div class=" flex  -space-x-4 rtl:space-x-reverse justify-center mt-1">
-                                <img class="w-10 h-10 border-2 border-[#FABE0E] rounded-full dark:border-gray-400" src="/docs/images/people/profile-picture-5.jpg" alt="">
-                                <img class="w-10 h-10 border-2 border-[#FABE0E] rounded-full dark:border-gray-400" src="/docs/images/people/profile-picture-2.jpg" alt="">
-                                <img class="w-10 h-10 border-2 border-[#FABE0E] rounded-full dark:border-gray-400" src="/docs/images/people/profile-picture-3.jpg" alt="">
-                                <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white dark:text-slate-400 bg-gray-700 border-2 border-[#FABE0E] rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                            </div>
-                            <div class="w-full mt-2  sm:mt-0 lg:mt-3">
-                                <button class="btn-red-octaclass"> Bergabung </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-bordered-yellow-octaclass">
-                    <h3 class="font-bold text-xl">Bank Soal</h3>
-                    <div class="w-full h-48 bg-cover bg-center mt-2 mb-2 bg-[url('https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjpExMTczNjB8&ixlib=rb-4.0.3&q=80&w=1080')] rounded-xl" ></div>
-                    <ul class="mt-2 w-full">
-                        <li class="btn-exam">
-                            <a class="block text-sky-600 dark:text-slate-400 ">Download Soal OSN Matematika SMA Tahun 2023 Tingkat Kota Kabupaten </a> 
-                        </li>
-                        <li class=" btn-exam">
-                            <a class="block text-sky-600  dark:text-slate-400">Download Soal Olimpiade</a> 
-                        </li>  
-                    </ul>
-                    <hr class="mt-3 mb-3 dark:border-slate-800">
-                    <a href="" class="btn-next-yellow"> Selanjutnya <span class="icon-[formkit--arrowright] self-center"></span></a>
-                </div>
-                <div class="card-bordered-yellow-octaclass">
-                    <h3 class="font-bold text-lg">Try Out</h3>
-                    <div class="relative w-full card-try-out border-b dark:border-b-slate-800 mb-3 mt-3 py-3"> 
-                        <div class="flex mt-2">
-                            <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjpExMTczNjB8&ixlib=rb-4.0.3&q=80&w=1080" class="w-20 sm:w-16 h-20 sm:h-16 bg-cover bg-center" alt="">
-                            <div class="px-3">
-                                <h5 class="w-full font-bold">To Olimpiade</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
-                            </div>
-                        </div>
-                        <div class="flex w-full justify-between mt-2">
-                            <div class="p-1 text-red-900 dark:text-sky-600 italic">Rp. 15000</div>
-                            <div><a href="" class="btn-start py-1"> Mulai</a></div>
-                           
-                        </div>
-                    </div> 
-                    <div class="relative w-full card-try-out border-b dark:border-b-slate-800 mb-3 mt-3 py-3"> 
-                        <div class="flex mt-2">
-                            <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjpExMTczNjB8&ixlib=rb-4.0.3&q=80&w=1080" class="w-20 sm:w-16 h-20 sm:h-16 bg-cover bg-center" alt="">
-                            <div class="px-3">
-                                <h5 class="w-full font-bold">To Olimpiade</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
-                            </div>
-                        </div>
-                        <div class="flex w-full justify-between mt-2">
-                            <div class="p-1 text-red-900 dark:text-sky-600 italic"><small class="text-xs line-through">Rp. 50000</small> <br> Rp 25000</div>
-                            <div><a href="" class="btn-start py-1"> Mulai</a></div> 
-                        </div>
-                    </div> 
-                    <div class="relative w-full card-try-out border-b dark:border-b-slate-800 mb-3 mt-3 py-3"> 
-                        <div class="flex mt-2">
-                            <img src="https://images.unsplash.com/photo-1718042416613-43cc2d64f518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzgzNzV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjpExMTczNjB8&ixlib=rb-4.0.3&q=80&w=1080" class="w-20 sm:w-16 h-20 sm:h-16 bg-cover bg-center" alt="">
-                            <div class="px-3">
-                                <h5 class="w-full font-bold">To Olimpiade</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
-                            </div>
-                        </div>
-                        <div class="flex w-full justify-between mt-2">
-                            <div class="p-1 text-red-900 dark:text-sky-600 italic">Free</div>
-                            <div><a href="" class="btn-start py-1"> Mulai</a></div>
-                           
-                        </div>
-                    </div> 
-                    <a href="" class="btn-next-yellow"> Selanjutnya <span class="icon-[formkit--arrowright] self-center"></span></a>
-                </div>
-                <div class="hidden card-bordered-yellow-octaclass">
-                    <h3 class="font-bold text-lg">Bank Soal</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores architecto veniam? Mollitia atque nemo fuga inventore cumque dignissimos laudantium assumenda delectus fugit officiis, vel nulla tenetur, est eaque sint.</p>
-                    <hr class="mt-3 mb-3">
-                </div>
-            </div>
         </div> 
     </section>
+    <section class="px-6 mb-12">
+        <div class="mx-auto">
+            <div class="grid gap-2.5 lg:pb-8 pb-8">
+                <h2 class="w-full text-center text-gray-900 text-4xl font-bold font-manrope leading-normal">Tentang Rivaya Education</h2>
+                <div class="w-full text-center text-gray-600 text-lg font-normal leading-8">Page ini menjelaskan lebih mendalam tentang <i>Rivaya Education </i></div>
+            </div> 
+            <div class="flex flex-col galery ">
+                <div class="w-full mx-auto grid grid-cols-1 gap-0 lg:flex lg:gap-6 gallery">
+                    <div class="md:col-span-4 md:h-[404px] h-[277px]   rounded-3xl">
+                        <img src="/asset/img/home/les.jpeg" alt="Gallery image" class="gallery-image object-contain rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full">
+                    </div>
+                    <div class="w-4/6 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti excepturi soluta aspernatur atque exercitationem nostrum, ipsum fugit necessitatibus omnis deserunt eum ea voluptas veniam ipsa corrupti illo explicabo! Voluptas, voluptatibus assumenda! Quos obcaecati, inventore quod quidem sint cumque ratione voluptatem ea dolorem facere quibusdam, fugiat nisi nemo nesciunt earum in aut iure necessitatibus. Neque, in praesentium dolorem, architecto nihil deserunt necessitatibus provident esse nisi, delectus eligendi eos sapiente aliquid! Fugit nisi natus autem. Officiis et, tenetur modi adipisci omnis in! Unde expedita quasi quidem vel aut! Laudantium expedita neque vel, nobis maiores molestias ullam accusantium ex nesciunt numquam tempora earum delectus nulla soluta est architecto! Sint illo numquam quo porro rem, quam inventore praesentium corporis excepturi, repudiandae, nulla perferendis facilis unde mollitia totam nostrum necessitatibus aliquid debitis! Libero id optio quae. Similique laborum molestiae modi non praesentium in minima natus beatae, reprehenderit quod pariatur expedita voluptatibus repudiandae perferendis autem error? Officiis quo fugiat laborum ratione labore accusantium, doloribus itaque illum perspiciatis nobis repellendus fuga dolore obcaecati sint dolorem eligendi architecto eaque magnam eveniet natus? Quasi laudantium deserunt quisquam vero molestias voluptatem ex, expedita, doloribus consectetur corporis aspernatur laboriosam voluptatum consequatur explicabo dolor fuga? Veniam placeat explicabo voluptas? Voluptate, accusantium?
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="close">&times;</span>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        </div>
+        </div>
+    </section>  
     <section id="filter">
         <div id="drawer-swipe" class="fixed z-40 w-full overflow-y-auto bg-white border-t border-gray-200 rounded-t-lg dark:border-gray-700 dark:bg-gray-800 transition-transform left-0 right-0 translate-y-full bottom-0 bottom-[-100px]" tabindex="-1" aria-labelledby="drawer-swipe-label">
             <div class="p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700" data-drawer-toggle="drawer-swipe">
@@ -447,6 +276,7 @@
         </div>
  
     </section>
+                                  
     <footer class="w-full dark:bg-gray-800 bg-[#f3f4f5] sm:h-72 relative border-t-slate-100">
         <div class="container mx-auto  sm:w-5/6 w-full max-w-screen-xl flex flex-wrap  gap-0">
             <div class="relative w-full sm:w-2/4 p-5 ">
@@ -508,4 +338,43 @@
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!--JAVASCRIPT CODE-->
+<!--JAVASCRIPT CODE-->
+<script>
+    var swiper = new Swiper(".slide-carousel", {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".slide-carousel .swiper-button-next",
+        prevEl: ".slide-carousel .swiper-button-prev",
+      },
+      breakpoints: {
+            640: {
+                slidesPerView: 2, // 2 slides per view for screens >= 640px
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3, // 3 slides per view for screens >= 768px
+                spaceBetween: 40
+            },
+            1024: {
+                slidesPerView: 3, // 4 slides per view for screens >= 1024px
+                spaceBetween: 20
+            },
+            // 1280: {
+            //     slidesPerView: 5, // 5 slides per view for screens >= 1280px
+            //     spaceBetween: 50
+            // },
+            // 1536: {
+            //     slidesPerView: 6, // 6 slides per view for screens >= 1536px
+            //     spaceBetween: 60
+            // }
+        },
+    });
+    var swiper = new Swiper(".testimoni-carousel", {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 30,  
+    });
+   </script>
 </html>
