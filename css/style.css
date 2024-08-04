@@ -2191,6 +2191,10 @@ input:checked + .toggle-bg {
   margin-right: 0.5rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -2884,6 +2888,10 @@ input:checked + .toggle-bg {
 
 .border-t-0 {
   border-top-width: 0px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -4436,12 +4444,20 @@ input:checked + .toggle-bg {
     gap: 1.5rem;
   }
 
+  .sm\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
   .sm\:rounded-tl-3xl {
     border-top-left-radius: 1.5rem;
   }
 
   .sm\:rounded-tr-3xl {
     border-top-right-radius: 1.5rem;
+  }
+
+  .sm\:border-t-2 {
+    border-top-width: 2px;
   }
 
   .sm\:bg-\[\#FABE0E\] {
@@ -4459,6 +4475,10 @@ input:checked + .toggle-bg {
 
   .sm\:p-8 {
     padding: 2rem;
+  }
+
+  .sm\:p-9 {
+    padding: 2.25rem;
   }
 
   .sm\:px-10 {
@@ -4525,6 +4545,12 @@ input:checked + .toggle-bg {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .group\/detail:hover .sm\:group-hover\/detail\:bottom-0 {
