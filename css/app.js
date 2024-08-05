@@ -162,25 +162,28 @@ toggleClose.addEventListener('click', handleClick);
     const lightbox = select('#lightbox');
     const lightboxImage = select('#lightbox-image');
     const closeButton = select('#close');
-
+  
     // Add event listener to each image
-    gallery.addEventListener('click', e => {
-        if (e.target.classList.contains('gallery-image')) {
-        const imageSrc = e.target.src;
-        lightboxImage.src = imageSrc;
-        lightbox.style.display = 'flex';
-        }
-    });
+    if( select('.gallery') != null) {
+        
+        gallery.addEventListener('click', e => {
+            if (e.target.classList.contains('gallery-image')) {
+            const imageSrc = e.target.src;
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = 'flex';
+            }
+        });
+        // Close lightbox when close button is clicked
+        closeButton.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', e => {
+            if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            }
+        });
+    }
 
-    // Close lightbox when close button is clicked
-    closeButton.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
 
-    // Close lightbox when clicking outside the image
-    lightbox.addEventListener('click', e => {
-        if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-        }
-    });
 })();

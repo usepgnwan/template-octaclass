@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
 <body class=" dark:text-slate-400  dark:bg-gray-700">
     <span class="icon-[ph--sun-light] size-4 cursor-pointer fill-gray-400 my-auto max-lg:ml-auto hidden"></span> 
@@ -155,100 +153,150 @@
                 <li aria-current="page">
                     <div class="flex items-center">
                         <span class="icon-[ep--arrow-right] text-slate-800 mt-2"></span> &nbsp;
-                        <span class="ms-1 font-medium text-gray-500 md:ms-2 dark:text-gray-400">Karir</span>
+                        <span class="ms-1 font-medium text-gray-500 md:ms-2 dark:text-gray-400">Cari Pengajar</span>
                     </div>
                 </li>
                 </ol>
             </nav>
         </div> 
     </section>
-    <section class="p-12 mx-auto sm:w-full  lg:flex lg:p-6 dark:bg-gray-800" id="body-section"> 
-        <div class="container lg:p-12 lg:flex-1   mx-auto lg:max-w-7xl">
-            <h1 class=" text-2xl sm:text-3xl font-semibold text-center mb-3">Menjadi Mitra Pengajar di <span class="text-[#FABE0E] dark:text-[#FABE0E]">Rifaya Education</span> </h1>
-            <p class="text-justify lg:text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus ut veniam deleniti quae maxime eaque aliquid reprehenderit magni nobis natus eos, hic tempore, quod neque nisi esse minus dolore reiciendis similique totam nesciunt asperiores. Aliquam obcaecati minima molestias sit error! Quibusdam architecto soluta quae nisi neque voluptatum numquam laudantium sunt rem expedita perspiciatis, similique, necessitatibus ullam repellat quam minus doloremque dignissimos earum, tenetur quas! Beatae commodi odit recusandae provident ad soluta, aliquam doloribus consequatur quibusdam quasi totam non accusamus? 
-            </p>  
-            <div class="w-full mt-5  mx-auto  ml-3 text-center">
-                <button class="btn-red-octaclass w-2/3 sm:w-1/5 bg-[#198754] hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 "> Daftar </button>
+    <section class="p-3 mx-auto lg:p-6 " id="body-section">  
+        <div class="p-4 w-full border rounded-xl bg-white z-30 dark:bg-slate-800  dark:border-slate-800 mx-auto flex gap-4 flex-wrap max-lg:relative sticky  lg:top-24">    
+            <div class="w-full sm:w-full lg:w-1/4 lg:relative"> 
+                <select class="js-example-basic-single select2-custom absolute block" name="state">
+                    <option value="AL">- Pilih Jenjang -</option> 
+                    <option value="WY">Wyoming</option>
+                    </select>
             </div>
-        </div>
-        <div class="hidden lg:flex lg:w-80 lg:h-96 lg:p-4 relative   items-center rounded-xl bg-center bg-contain bg-no-repeat bg-[url('../ ')]"> 
-            <img src="asset/img/home/teacher2.png" class="drop-shadow-2xl ">
-        </div>
+            <div class="w-full sm:w-full lg:w-1/4 lg:relative"> 
+                <select class="js-example-basic-single select2-custom absolute block" name="state">
+                    <option value="AL">- Pilih Mapel -</option> 
+                    <option value="WY">Wyoming</option>
+                    </select>
+            </div>
+            <div class="w-full sm:w-full lg:w-1/4 lg:relative"> 
+                <select class="js-example-basic-single select2-custom absolute block" name="state">
+                    <option value="AL">- Pilih Provinsi -</option> 
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div class="max-lg:w-full lg:w-1/5"> 
+                <button class="btn-red-octaclass block h-[2.65rem] w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:border-gray-800 dark:text-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800 dark:hover:text-slate-400"> Cari </button>
+            </div>
+        </div> 
+        <div class="mt-3  w-full  flex gap-0 flex-wrap  ">    
+            <div class="w-full sm:w-full lg:w-1/4  "> 
+                <div class="border rounded-xl p-5 sticky  lg:top-48 bg-white dark:bg-slate-800 dark:border-slate-800 "> 
+                    <h3 class="font-semibold ">Jenis Kelamin</h3> 
+                    <div class="flex items-center mt-1 mb-1">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Laki-Laki</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Perempuan</label>
+                    </div> 
+                    <button class="mt-2 btn-red-octaclass block h-[2.65rem] w-full bg-transparent border text-sky-700   border-solid border-sky-700 hover:bg-sky-700 hover:text-white   focus:ring-4 focus:outline-none focus:ring-blue-300  dark:border-gray-800 dark:text-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800 dark:hover:text-slate-400"> <span class="icon-[mdi--filter]"></span> Filter </button>
+                    
+                </div>
+            </div>
+            <div class="w-full p-5 sm:w-full lg:w-3/4 "> 
+                <div class=" mb-12 continer lg:px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly "> 
+                    <div class="  dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
+                            <div class="w-full rounded-xl p-2 relative"> 
+                                <div class="rounded-xl  bg-cover bg-center bg-no-repeat bg-[url('../asset/img/home/rani1.jpg')] h-48"></div>
+                                <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[fluent-emoji--star]"></span> 5</div>
+                                <div class="dark:bg-gray-800 absolute bottom-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> Online / Offline </div>
+                            </div>
+                            <div class="px-4 py-2 dark:text-slate-400">
+                                <div class="font-medium text-sm  mb-1 px-1"> <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html"> Mis Rani </a></div>
+                                <div class="flex mb-1  gap-1">
+                                    <div class="pill-yellow-octaclass">SD</div>
+                                    <div class="pill-octaclass">Matematika</div>
+                                    <div class="pill-octaclass">Inggris</div> 
+                                    <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
+                                </div>
+                                <div class="text-sm  px-1 text-justify min-h-16">
+                                    <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicin ipsum dolor sit, amet consectetur adipisicin  e.</a>
+                                </div>
+                            </div> 
+                        <hr class="dark:border-gray-700">
+                        <div class="px-4 text-sm  py-2 flex">
+                            <div > <span class="icon-[teenyicons--school-outline] hidden sm:inline-block"></span> </div>
+                            <div class="px-2 ">Ikip Siliwangi</div>
+                        </div>
+                        <div class="px-4 text-sm  mb-2 flex">
+                            <div class=""> <span class="icon-[carbon--education]"></span> </div>
+                            <div class="px-2">Pendidikan Matematika</div>
+                        </div>
+                    </div>  
+                    <div class="  dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
+                            <div class="w-full rounded-xl p-2 relative"> 
+                                <div class="rounded-xl  bg-cover bg-center bg-no-repeat bg-[url(https://via.placeholder.com/600x1200)] h-48"></div>
+                                <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[fluent-emoji--star]"></span> 5</div>
+                                <div class="dark:bg-gray-800 absolute bottom-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center">  Offline </div>
+                            </div>
+                            <div class="px-4 py-2 dark:text-slate-400">
+                                <div class="font-medium text-sm  mb-1 px-1"> <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html">   Gunawan </a></div>
+                                <div class="flex mb-1  gap-1">
+                                    <div class="pill-yellow-octaclass">SMP</div>
+                                    <div class="pill-octaclass">Matematika</div>
+                                    <div class="pill-octaclass">Inggris</div> 
+                                    <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
+                                </div>
+                                <div class="text-sm  px-1 text-justify min-h-16">
+                                    <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicin ipsum dolor sit, amet consectetur adipisicin  e.</a>
+                                </div>
+                            </div> 
+                        <hr class="dark:border-gray-700">
+                        <div class="px-4 text-sm  py-2 flex">
+                            <div > <span class="icon-[teenyicons--school-outline] hidden sm:inline-block"></span> </div>
+                            <div class="px-2 ">Ikip Siliwangi</div>
+                        </div>
+                        <div class="px-4 text-sm  mb-2 flex">
+                            <div class=""> <span class="icon-[carbon--education]"></span> </div>
+                            <div class="px-2">Pendidikan Matematika</div>
+                        </div>
+                    </div>  
+                    <div class="  dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64  "> 
+                            <div class="w-full rounded-xl p-2 relative"> 
+                                <div class="rounded-xl  bg-cover bg-center bg-no-repeat bg-[url(https://via.placeholder.com/600x1200)] h-48"></div>
+                                <div class="dark:bg-gray-800 absolute top-4 right-4 text-[10px] p-2 shadow-lg bg-white rounded-md content-center"> <span class="icon-[fluent-emoji--star]"></span> 5</div>
+                            </div>
+                            <div class="px-4 py-2 dark:text-slate-400">
+                                <div class="font-medium text-sm  mb-1 px-1"> <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html"> Mis Oktaviani </a></div>
+                                <div class="flex mb-1  gap-1">
+                                    <div class="pill-yellow-octaclass">SD</div>
+                                    <div class="pill-octaclass">Matematika</div>
+                                    <div class="pill-octaclass">Inggris</div> 
+                                    <!-- <div class="w-7 h-w-7 rounded-full cursor-pointer border text-center flex justify-center"><span class="icon-[ic--twotone-plus] mt-1"></span></div> -->
+                                </div>
+                                <div class="text-sm  px-1 text-justify min-h-16">
+                                    <a class="hover:text-blue-600 cursor-pointer " href="artikel-detail.html">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicin ipsum dolor sit, amet consectetur adipisicin  e.</a>
+                                </div>
+                            </div> 
+                        <hr class="dark:border-gray-700">
+                        <div class="px-4 text-sm  py-2 flex">
+                            <div > <span class="icon-[teenyicons--school-outline] hidden sm:inline-block"></span> </div>
+                            <div class="px-2 ">Ikip Siliwangi</div>
+                        </div>
+                        <div class="px-4 text-sm  mb-2 flex">
+                            <div class=""> <span class="icon-[carbon--education]"></span> </div>
+                            <div class="px-2">Pendidikan Matematika</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div> 
     </section>
     <section class="w-full mb-12"> 
-        <div class="sm:w-9/12 mx-auto shadow-lg p-6 relative">  
-            <div class="max-lg:w-full max-lg:p-5 max-w-7xl mt-2 w-full sm:pl-1 pr-[16rem] mx-auto flex content-center flex-wrap ">
-                <h1 class="font-bold text-2xl"> <span class="text-[#fabe0e]">  Rifaya Education </span> Les Private memiliki dua System pengajaran:</h1>
-                <div class="text-justify mt-4">
-                    <span class="text-2xl font-bold"><span class="icon-[fluent--people-swap-20-filled]"></span> Online</span> consectetur adipisicing elit. Commodi quos quo labore error blanditiis possimus animi quaerat molestiae dolorum numquam similique voluptate itaque sapiente, ad, repellendus necessitatibus? Corrupti, ea beatae. 
-                    <hr class="dark:border-gray-700 my-4">
-                    <span class="text-2xl font-bold"><span class="icon-[fluent--people-edit-16-regular]"></span> Offline</span> consectetur adipisicing elit. Commodi quos quo labore error blanditiis possimus animi quaerat molestiae dolorum numquam similique voluptate itaque sapiente, ad, repellendus necessitatibus? Corrupti, ea beatae. 
-
-                </div> 
-            </div> 
-            <div class="max-lg:w-full max-lg:p-5 bg-[#fabe0e] dark:bg-gray-800 dark:text-slate-400 lg:p-4 lg:absolute mx-auto mt-5 h-80 w-64 lg:rounded-xl lg:shadow-lg lg:right-0 lg:top-2 text-white"> 
-                Mengapa harus bergabung dengan <i>Les Private</i> : 
-                <ul class="text-justify dark:text-gray-400 text-sm">
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Menambah penghasilan tiap bulannya</div>
-                        </div> 
-                    </li> 
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Jadwal disesuaikan bersama</div>
-                        </div> 
-                    </li>  
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Waktu flexible</div>
-                        </div> 
-                    </li> 
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Menambah pengalaman</div>
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Calon Siswa ter <i>verifikasi</i> </div>
-                        </div> 
-                    </li> 
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Pelayanan komunikatif & informatif</div>
-                        </div> 
-                    </li>  
-                    <li class="mb-1">
-                        <div class="flex">
-                            <div class="mr-2"><span class="icon-[material-symbols--checklist-rounded]"></span> </div>
-                            <div>Sistem pembayar jelas</div>
-                        </div> 
-                    </li>  
-                </ul>
-            </div>
-        </div> 
+        
     </section>
      
-    <section class="p-12 mx-auto sm:w-full  lg:flex lg:p-6 dark:bg-gray-800" id="body-section">
-        <div class="hidden lg:flex lg:w-80 lg:h-96 lg:p-4 relative   items-center rounded-xl bg-center bg-contain bg-no-repeat bg-[url('../ ')]"> 
-            <img src="asset/img/home/teacher-hai.png" class="drop-shadow-2xl ">
-        </div> 
-        <div class="container lg:p-12 lg:flex-1 lg:content-center  mx-auto lg:max-w-7xl">
-            <h1 class=" text-2xl sm:text-3xl font-semibold text-center mb-3">Siapa saja yang bisa menjadi  <span class="text-[#FABE0E] dark:text-[#FABE0E]">Mitra Pengajar ?</span>  </h1>
-            <p class="text-justify lg:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus ut veniam deleniti quae maxime eaque aliquid  
-            </p>  
-            <div class="w-full mt-5  mx-auto  ml-3 text-center">
-                <button class="btn-red-octaclass w-2/3 sm:w-1/5 bg-[#198754] hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 "> Daftar </button>
-            </div>
-        </div>
-        
-    </section>    
-
+ 
     <footer class="w-full dark:bg-gray-800 bg-[#f3f4f5] sm:h-72 relative border-t-slate-100">
         <div class="container mx-auto  sm:w-5/6 w-full max-w-screen-xl flex flex-wrap  gap-0">
             <div class="relative w-full sm:w-2/4 p-5 ">
@@ -303,11 +351,23 @@
             <a href="https://usepgnwan.github.io" target="_blank" class="text-sm">© 2024 Copy Right | Usep Gnwan</a>
         </div>
     </footer>
-</body>
-
+    <style>
+        
+    </style>
+</body> 
 <script src="css/app.js"></script>
 <!-- <script src="node_modules/flowbite/dist/flowbite.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    // In your Javascript (external .js resource or <script> tag)
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2({
+            containerCssClass: 'custom-select2-container',
+            dropdownCssClass: 'custom-select2-dropdown'
+        });
+    });
+ </script>
 </html>

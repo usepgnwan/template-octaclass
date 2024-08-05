@@ -46,7 +46,7 @@
         max-width: 100%;
         cursor: pointer;
     }
-  
+
 }
 @layer utilities{
     /* Custom styles using @apply */
@@ -63,6 +63,7 @@
 }
 
 @layer components{
+
     .card-grid{
         @apply bg-blue-500 aspect-[3/4] md:aspect-[3/4] xl:aspect-[4/3] rounded-lg overflow-hidden relative hover:scale-95 duration-500;
     }
@@ -95,15 +96,44 @@
         @apply bg-red-700 hover:bg-red-600 hover:text-white dark:text-white cursor-pointer w-full h-14 rounded-xl text-white;
     }
 
-  .btn-yellow-octaclass{
-    @apply block text-center rounded-full p-2 px-4  text-white bg-[#FABE0E] border border-solid border-[#FABE0E] hover:bg-[#d4af41] hover:text-white dark:border-gray-800 dark:text-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800 dark:hover:text-slate-400 w-full;
-  }
+    .btn-yellow-octaclass{
+        @apply block text-center rounded-full p-2 px-4  text-white bg-[#FABE0E] border border-solid border-[#FABE0E] hover:bg-[#d4af41] hover:text-white dark:border-gray-800 dark:text-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800 dark:hover:text-slate-400 w-full;
+    }
 
-  .card-octaclass-flex {
-    @apply dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64;
-  }
+    .card-octaclass-flex {
+        @apply dark:shadow-gray-800 dark:bg-gray-800 dark:text-slate-400 rounded-xl shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 xl:w-64;
+    }
 
-  .btn-exam {
-    @apply dark:bg-slate-600 dark:hover:bg-slate-800 bg-slate-100 mb-1 cursor-pointer px-3 py-2 hover:bg-gray-200 rounded-lg;
-  }
+    .btn-exam {
+        @apply dark:bg-slate-600 dark:hover:bg-slate-800 bg-slate-100 mb-1 cursor-pointer px-3 py-2 hover:bg-gray-200 rounded-lg;
+    } 
 }
+    .select2.select2-container{
+        display:block !important;
+        width : 100% !important;
+    }
+  .select2.select2-container .select2-selection {
+
+    border: 1px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: 42px; 
+    outline: none !important;
+    transition: all .15s ease-in-out;
+  }
+  
+  .select2.select2-container .select2-selection .select2-selection__rendered {
+    color: #333;
+    line-height: 42px;
+    padding-right: 33px;
+  }
+  
+  .select2.select2-container .select2-selection .select2-selection__arrow {
+    /* background: #f8f8f8; */
+    /* border-left: 1px solid #ccc; */
+    -webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
+    height: 32px; 
+  } 
