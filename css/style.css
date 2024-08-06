@@ -1939,6 +1939,10 @@ input:checked + .toggle-bg {
   bottom: 2.5rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .bottom-\[-100px\] {
   bottom: -100px;
 }
@@ -1989,14 +1993,6 @@ input:checked + .toggle-bg {
 
 .top-4 {
   top: 1rem;
-}
-
-.right-14 {
-  right: 3.5rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
 }
 
 .-z-10 {
@@ -2323,10 +2319,6 @@ input:checked + .toggle-bg {
   height: 2.25rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[2\.65rem\] {
   height: 2.65rem;
 }
@@ -2337,6 +2329,10 @@ input:checked + .toggle-bg {
 
 .h-\[277px\] {
   height: 277px;
+}
+
+.h-\[420px\] {
+  height: 420px;
 }
 
 .h-\[48px\] {
@@ -2351,12 +2347,8 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[420px\] {
-  height: 420px;
+.h-60 {
+  height: 15rem;
 }
 
 .max-h-\[48px\] {
@@ -2791,6 +2783,10 @@ input:checked + .toggle-bg {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .text-nowrap {
@@ -3283,6 +3279,10 @@ input:checked + .toggle-bg {
   padding-top: 1.25rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3490,9 +3490,9 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / 0.8);
 }
 
-.text-yellow-400 {
+.text-blue-700 {
   --tw-text-opacity: 1;
-  color: rgb(227 160 8 / var(--tw-text-opacity));
+  color: rgb(26 86 219 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -3718,6 +3718,11 @@ input:checked + .toggle-bg {
 .hover\:bg-yellow-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 86 219 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#FABE0E\]:hover {
@@ -4720,6 +4725,10 @@ input:checked + .toggle-bg {
     display: none;
   }
 
+  .lg\:aspect-\[3\/4\] {
+    aspect-ratio: 3/4;
+  }
+
   .lg\:h-28 {
     height: 7rem;
   }
@@ -4870,6 +4879,11 @@ input:checked + .toggle-bg {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-slate-700 {
