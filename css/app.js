@@ -36,8 +36,9 @@ function handleClick() {
 }
 
 // toggleOpen.addEventListener('click', handleClick);
+if(toggleClose != null){
 toggleClose.addEventListener('click', handleClick);
-
+}
 
 
 // function toggleMenu (btn) {
@@ -115,14 +116,21 @@ toggleClose.addEventListener('click', handleClick);
     const darkbtn = select('.dark-button');
     if(localStorage.theme !== undefined){
         if ((localStorage.theme !== '' && localStorage.theme === 'dark' )|| (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            darkbtn.classList.add('icon-[line-md--moon-loop]'); 
+            if(darkbtn != null){
+            
+                darkbtn.classList.add('icon-[line-md--moon-loop]'); 
+            }
             html.classList.add('dark')
         } else { 
+            if(darkbtn != null){
                 darkbtn.classList.add('icon-[ph--sun-light]');
+            }
                 html.classList.remove('dark')
         }
     }else { 
-            darkbtn.classList.add('icon-[ph--sun-light]');
+            if(darkbtn != null){
+                darkbtn.classList.add('icon-[ph--sun-light]');
+            }
             html.classList.remove('dark')
     }
         
@@ -139,20 +147,22 @@ toggleClose.addEventListener('click', handleClick);
 
     window.addEventListener('scroll', function() {
         const header = document.getElementById('header');
-        const Hlist = header.classList;
-        if (window.scrollY > 50) { // Change this value based on when you want the effect to start
-            Hlist.add('transition-all')
-            Hlist.add('ease-in-out')
-            Hlist.add('px-12');
-            Hlist.remove('sm:px-10');
-            Hlist.add('shadow-lg'); 
-            
-        } else {
-            Hlist.remove('transition-all')
-            Hlist.remove('ease-in-out')
-            Hlist.remove('12x-9');
-            Hlist.add('sm:px-10');
-            Hlist.remove('shadow-lg'); 
+        if(header != null){
+            const Hlist = header.classList;
+            if (window.scrollY > 50) { // Change this value based on when you want the effect to start
+                Hlist.add('transition-all')
+                Hlist.add('ease-in-out')
+                Hlist.add('px-12');
+                Hlist.remove('sm:px-10');
+                Hlist.add('shadow-lg'); 
+                
+            } else {
+                Hlist.remove('transition-all')
+                Hlist.remove('ease-in-out')
+                Hlist.remove('12x-9');
+                Hlist.add('sm:px-10');
+                Hlist.remove('shadow-lg'); 
+            }
         }
     });
     
@@ -185,5 +195,32 @@ toggleClose.addEventListener('click', handleClick);
         });
     }
 
+    on('click','.button-menu', function(){
+        let $this = this; 
+        let content = select('.octa-body-content')
+        let menu = select('#drawer-disabled-backdrop')
+        let footer = select('.octa-footer') 
+        if($this.classList.contains('h-opened')){
+            $this.classList.remove('h-opened')
+            $this.classList.remove('bg-[#FABE0E]')
+            $this.classList.add('bg-slate-400')
 
+            content.classList.remove('w-4/5')
+            content.classList.add('w-full') 
+            footer.classList.remove('sm:w-4/5')
+            menu.classList.add('-translate-x-full')
+            $this.querySelector('.h-open').classList.remove('hidden')
+            $this.querySelector('.h-close').classList.add('hidden')
+        }else{
+            footer.classList.add('sm:w-4/5')
+            menu.classList.remove('-translate-x-full')
+            content.classList.add('w-4/5')
+            content.classList.remove('w-full')
+            $this.classList.add('h-opened')
+            $this.classList.add('bg-[#FABE0E]')
+            $this.classList.remove('bg-slate-400')
+            $this.querySelector('.h-open').classList.add('hidden')
+            $this.querySelector('.h-close').classList.remove('hidden')
+        }
+    })
 })();
