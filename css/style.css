@@ -4829,6 +4829,10 @@ input:checked + .toggle-bg {
     background-size: cover;
   }
 
+  .max-lg\:bg-contain {
+    background-size: contain;
+  }
+
   .max-lg\:p-5 {
     padding: 1.25rem;
   }
