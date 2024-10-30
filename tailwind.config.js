@@ -10,6 +10,9 @@ module.exports = {
     darkMode : 'class',
       theme: {
         extend: {
+          fontFamily: {
+            italiano: ['Italianno'], // Add your font here
+          },
           height:{
               "500px" : "500px",
               "400px" : "400px",
