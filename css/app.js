@@ -1,4 +1,7 @@
-   
+ 
+const showIMG = GLightbox({
+    selector: '.showIMG'
+});
 
 
 // var toggleOpen = document.getElementById('toggleOpen');

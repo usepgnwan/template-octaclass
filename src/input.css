@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-    
+    /* Customize the title style */
+    .gslide-title {
+        color: #ff4500; /* Set the desired color for the title */
+        font-size: 28px; /* Adjust font size */
+        font-weight: bold; /* Make the title bold */
+        text-align: center; /* Center the title text */
+    }
+
+    /* Customize the description style */
+    .gslide-desc {
+        color: #ffffff; /* Set the desired color for the description */
+        font-size: 18px; /* Adjust font size */
+        font-style: italic; /* Make the description italic */
+        text-align: center; /* Center the description text */
+        margin-top: 10px; /* Add space above the description */
+    }
+
     .lightbox {
         display: none;
         position: fixed;
