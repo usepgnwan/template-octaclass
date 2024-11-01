@@ -4784,6 +4784,10 @@ input:checked + .toggle-bg {
     bottom: 3.5rem;
   }
 
+  .max-lg\:bottom-24 {
+    bottom: 6rem;
+  }
+
   .max-lg\:ml-auto {
     margin-left: auto;
   }
