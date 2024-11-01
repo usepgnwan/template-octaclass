@@ -4753,6 +4753,14 @@ input:checked + .toggle-bg {
     top: 0px;
   }
 
+  .max-lg\:bottom-1 {
+    bottom: 0.25rem;
+  }
+
+  .max-lg\:bottom-14 {
+    bottom: 3.5rem;
+  }
+
   .max-lg\:ml-auto {
     margin-left: auto;
   }
