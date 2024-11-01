@@ -2,6 +2,7 @@
 const showIMG = GLightbox({
     selector: '.showIMG',
     onOpen: (el) => {
+        console.log(el)
         // Prevent default action if necessary
         el.preventDefault();
     }
